@@ -1,0 +1,16 @@
+.menu-game {
+  width: 240px;
+  margin: max(16vh, 20%) auto;
+
+  &__new-game.tf-button {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &__chapter.tf-button {
+    width: 240px;
+    height: 36px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}

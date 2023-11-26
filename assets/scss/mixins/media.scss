@@ -1,0 +1,49 @@
+@import '@/assets/scss/variables';
+
+@mixin media-sm-down {
+  @media screen and (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin media-sm-up {
+  @media screen and (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin media-md-down {
+  @media screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin media-md-up {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin media-lg-down {
+  @media screen and (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin media-lg-up {
+  @media screen and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin media-xl-down {
+  @media screen and (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin media-xl-up {
+  @media screen and (min-width: $breakpoint-xl) {
+    @content;
+  }
+}

@@ -1,0 +1,29 @@
+@import '@/assets/scss/variables';
+
+.tf-button {
+  width: 108px;
+  padding: 0.375rem 0.75rem;
+  color: $color-white;
+
+  &.round {
+    border-radius: 0.25rem;
+  }
+
+  &.x-large {
+    width: 240px;
+    height: 72px;
+    padding: 0.5rem 1rem;
+  }
+
+  &.secondary {
+    background: $color-secondary;
+  }
+
+  &.dark {
+    background: $color-dark;
+  }
+
+  &.accent {
+    background: $color-accent;
+  }
+}

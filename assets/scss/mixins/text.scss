@@ -1,0 +1,5 @@
+@mixin text-red-shadow {
+  text-shadow:
+    3px 3px 3px black,
+    0 0 1em red;
+}
