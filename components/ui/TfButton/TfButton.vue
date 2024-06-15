@@ -1,7 +1,13 @@
 <template>
-  <button type="button" class="tf-button" :class="buttonClasses">
+  <component
+    :is="component"
+    :to="to"
+    type="button"
+    class="tf-button"
+    :class="buttonClasses"
+  >
     <slot />
-  </button>
+  </component>
 </template>
 
 <script setup lang="ts">
@@ -24,6 +30,10 @@ const props = defineProps({
     type: String as PropType<TfButtonSizes>,
     default: '',
   },
+  to: {
+    type: String,
+    default: '',
+  },
 })
 
 const buttonClasses = computed(() => {
@@ -35,6 +45,8 @@ const buttonClasses = computed(() => {
     { 'is-rounded': rounded },
   ].filter(Boolean)
 })
+
+const component = computed(() => (props.to ? 'router-link' : 'button'))
 </script>
 
 <style lang="scss" src="./TfButton.scss"></style>

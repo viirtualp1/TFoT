@@ -1,6 +1,6 @@
 <template>
   <div class="menu-game">
-    <TfButton class="menu-game__large-button" size="x-large" rounded>
+    <TfButton class="menu-game__large-button" size="x-large" rounded to="/game">
       Новая игра
     </TfButton>
 

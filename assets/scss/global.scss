@@ -6,6 +6,10 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   @include media-lg-up {
     width: $container-width;
