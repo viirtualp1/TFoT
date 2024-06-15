@@ -27,9 +27,13 @@ const props = defineProps({
 })
 
 const buttonClasses = computed(() => {
-  const { size, theme, rounded } = props
+  const { theme, rounded, size } = props
 
-  return `${size} ${theme} ${rounded ? 'round' : ''}`
+  return [
+    size && size,
+    theme ? `is-${theme}` : 'is-dark',
+    { 'is-rounded': rounded },
+  ].filter(Boolean)
 })
 </script>
 

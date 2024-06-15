@@ -2,10 +2,11 @@
 
 .tf-button {
   width: 108px;
-  padding: 0.375rem 0.75rem;
+  height: 50px;
+  padding: 0.5rem 0.75rem;
   color: $color-white;
 
-  &.round {
+  &.is-rounded {
     border-radius: 0.25rem;
   }
 
@@ -15,15 +16,15 @@
     padding: 0.5rem 1rem;
   }
 
-  &.secondary {
+  &.is-secondary {
     background: $color-secondary;
   }
 
-  &.dark {
+  &.is-dark {
     background: $color-dark;
   }
 
-  &.accent {
+  &.is-accent {
     background: $color-accent;
   }
 }
